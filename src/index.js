@@ -24,7 +24,8 @@ module.exports = function check(str, bracketsConfig) {
       }
     }
   }
-  return true;
+  if (openBrackets.length>0){return false}
+  else return true;
 }
 
-//console.log(check('|()|(||)||', [['(', ')'], ['|', '|']] ));
+//console.log(check('8888877878887777777888888887777777887887788788887887777777788888888887788888', [['1', '2'], ['3', '4'], ['5', '6'], ['7', '7'], ['8', '8']] ));
